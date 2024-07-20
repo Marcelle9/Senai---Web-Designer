@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="elementos.js" defer></script>
+    <style>
+        .card {
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 14px;
+            height: 250px;
+            padding: 5px;
+        }
+        
+        .btn--primario {
+            background-color: rgba(0, 0, 255, 0.651);
+            color: white;
+            border: 2px solid black;
+        }
+        
+        .btn--secundario {
+            background-color: white;
+            color: rgb(0, 0, 139);
+            border: 2px solid black;
+        }
+        
+        .desc--card {
+            padding: 5px;
+        }
+        
+        .titulo--card {
+            text-align: center;
+        }
+        
+        .seletor--tamanho {
+            height: 72px;
+            width: 72px;
+            border-radius: 50%;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            font-size: 32px;
+        }
+        
+        #tamanhos {
+            margin-top: 30px;
+            display: flex;
+            margin-top: 100px;
+            gap: 24px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <section>
+
+
+        <article class="card">
+            <h2 class="titulo--card">viajem para o comboja</h2>
+            <p class="desc--card"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, labore fugiat. Quibusdam enim dolore natus corporis! Quos inventore consequatur maiores labore? Fuga, adipisci molestias esse cum reprehenderit omnis ipsa maiores.
+            </p>
+
+            <button class="btn--primario">reserve</button>
+            <button class="btn--secundario">saiba mais</button>
+        </article>
+
+
+    </section>
+
+    <!-- criaçao de elementos massa -->
+
+    <section id="tamanhos">
+        <div class="seletor--tamanho">
+            <span class="tamanho">PP</span>
+        </div>
+    </section>
+</body>
+
+</html>

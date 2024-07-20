@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔮 Guess-o-tron</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <div class="video--container">
+        <video id="background--video" src="Assets/space-background.webm" autoplay muted loop></video>
+    </div>
+    <div class="wrapper">
+        <header class="game--header">
+            <button class="regular btn--rules">Como jogar?</button>
+            <h2>BEST: <span class="num--best">0</span></h2>
+            <button class="regular btn--sobre">Sobre</button>
+        </header>
+
+        <div class="game--title">
+            <h1>Guess-o-tron Fury <span class="nine--thousand">9000</span></h1>
+            <div class="game--desc">
+                <p>Tente adivinhar se o próximo número sorteado será <strong>maior</strong> ou <strong>menor</strong>.
+                </p>
+                <p>Adivinhe <strong class="text--grad">3 vezes em seguida</strong> para vencer.</p>
+            </div>
+        </div>
+        <main class="game--core">
+            <div class="num--atual"> </div>
+            <section class="container--guess">
+                <button id="btn--alto" onclick="verificarResposta('alto')">Mais alto</button>
+                <button id="btn--baixo" onclick="verificarResposta('baixo')">Mais baixo</button>
+            </section>
+            <section class="game--control">
+                <button id="btn--start">Começar!</button>
+                <div class="game--stats">
+                    <h2>vitórias:</h2> <span class="num--vit">0</span>
+                    <h2>derrotas:</h2> <span class="num--der">0</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>

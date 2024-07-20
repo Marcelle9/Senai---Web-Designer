@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tod-o-tron Fury 9000</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">""
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="animaçao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main id="app--core">
+        <header id="todo--header">
+            <h1 class="entrada--texto">Lista De Tarefa</h1>
+        </header>
+        <form id="todo--form">
+            <input type="text" name="criar--tarefa" id="criar--tarefa" placeholder="Crie uma tarefa...">
+            <button type="submit" id="add--tarefa" class="add--tarefa"> + </button>
+        </form>
+        <section id="tarefas">
+        </section>
+        <footer id="todo--footer">
+            <span class="counter">Tudo Feito!</span>
+            <div class="wrapper--filtros">
+                <button class="btn--filtro" id="todas">Todas</button>
+                <button class="btn--filtro" id="pendentes">Pendentes</button>
+                <button class="btn--filtro" id="done">Concluídas</button>
+            </div>
+            <button class="btn--filtro" id="limpar">Limpar concluídas</button>
+        </footer>
+    </main>
+</body>
+
+</html>

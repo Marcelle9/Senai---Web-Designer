@@ -1,0 +1,49 @@
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+.seletor--core {
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: cadetblue;
+    width: 96px;
+    height: 96px;
+}
+
+.id--box {
+    margin: 48px auto;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    font-size: 72px;
+    display: grid;
+    place-items: center;
+}
+
+.seletor--core:first-child {
+    background-color: red;
+}
+
+.seletor--core:last-child {
+    background-color: blue;
+}
+
+.seletor--core:nth-child(2) {
+    background-color: yellow;
+}
+
+.seletor--core:nth-child(3) {
+    background-color: green;
+}
+
+.seletor--core:nth-child(4) {
+    background-color: purple;
+}
