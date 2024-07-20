@@ -1,0 +1,9 @@
+esse é o arquivo 3, novas funcionalidades
+
+<<<<<<< HEAD
+Essa linha fiz no master
+=======
+Esse linha eu fiz no NEW SUFF
+
+
+>>>>>>> new_suff

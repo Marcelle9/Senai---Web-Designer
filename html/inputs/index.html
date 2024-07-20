@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        
+        input,
+        select,
+        button {
+            font-family: inherit;
+        }
+        
+        input {
+            outline: 0;
+        }
+        
+        input:focus {
+            border-bottom: 2px solid blue;
+        }
+        
+        input:valid {
+            border: 2px solid green;
+        }
+        
+        input:invalid {
+            border: 2px solid red;
+        }
+        
+        input::placeholder {
+            color: corals;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <form action="">
+        <!--INPUTS - CAMPOS QUE O USHARIO VAI "DIRIGIR ALGUMA COISA"-->
+        <!--selects - caixa de seleçao-->
+        <!--RADIUS - BOTOES DE SELEÇAO (SOMENTE UM)-->
+        <!-- CHECKBOX - CAIXINHA DE SELEÇAO (SELECIONAR VARIUS)-->
+
+
+        <label for="nome - usuario">Coloque sue nome</label>
+        <input type="text" name="nome - usuario" id="nome - usuario" required minlength="3" maxlength="30">
+
+        <input type="text" name="cidade - usuario" id="cidade - usuario" placeholder="insira sua cidade">
+
+
+
+        <label for="senha - usuario">Coloque sua senha</label>
+        <input type="password" name="senha - usuario" id="senha - usuario">
+
+        <label for="idade - usuario">Idade</label>
+        <input type="number" name="idade - usuario" id="idade - usuario" min="13" max="80">
+
+        <select name="ninja -1" id="ninja -1">
+            <option value="">naruto</option>
+            <option value="">sasuke</option>
+            <option value="">kakashi</option>
+            <option value="">jiraya</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+
+        <button type="reset">Limpar </button>
+    </form>
+</body>
+
+</html>
