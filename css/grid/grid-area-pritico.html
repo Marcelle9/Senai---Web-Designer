@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratica-grid-area</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .blog-post {
+            border-radius: 10px;
+            width: 720px;
+            background-color: white;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: "imagem main" "imagem aside";
+            box-shadow: 0px 40px 40px 0px rgba(163, 10, 10, 0.089);
+            overflow: hidden;
+        }
+        
+        .img-post {
+            grid-area: imagem;
+        }
+        
+        .detalhe-do-post {
+            grid-area: main;
+            padding: 32px 28px;
+        }
+        
+        .autor-post {
+            padding: 0px 28px 32px 28px;
+            grid-area: aside;
+        }
+        
+        h2 {
+            margin-bottom: 12px;
+        }
+        
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <article class="blog-post">
+        <img src="Bitmap (1).png" alt="" class="img-post">
+        <main class="detalhe-do-post">
+            <h2>Transforme o ambiente adicionando esses toques maravilhosos aos móveis da sua casa.</h2>
+
+            <p>
+                Já esteve em um cômodo e sentiu que algo estava faltando? Essas dicas simples vão ajudar você a fazer qualquer ambiente se sentir completo.
+            </p>
+
+
+        </main>
+
+
+        <aside class="autor-do-post">
+            🌚
+        </aside>
+
+    </article>
+
+</body>
+
+</html>

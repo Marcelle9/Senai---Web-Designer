@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            height: 6.25rem;
+            background-color: lightblue;
+            align-items: center;
+            padding: 0px 40px;
+        }
+        
+        nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .grupo-button {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .btn {
+            display: none;
+        }
+        
+        @media (max-width: 48rem) {
+            nav {
+                background-color: rgba(165, 42, 42, 0.575);
+                height: 100vh;
+                position: absolute;
+                backdrop-filter: blur(14px);
+                top: 0;
+                left: 0;
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .btn {
+                display: block;
+                position: absolute;
+                top: 1.5625rem;
+                right: 1.5625rem;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <p>Lnçamentos</p>
+            <p>ofertas</p>
+            <p>masculino</p>
+            <p>infantil</p>
+            <p>SNKRS</p>
+        </nav>
+
+        <button class="btn">X</button>
+
+        <div class="grupo-button">
+            <button>Login</button>
+            <button>Cadastrar</button>
+            <button>🛒</button>
+        </div>
+
+    </header>
+
+    <main>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto beatae molestias, illum impedit aliquid vero nulla sequi optio reprehenderit, accusamus voluptas et voluptatibus alias suscipit fugit, obcaecati id dicta earum!
+    </main>
+</body>
+
+</html>
