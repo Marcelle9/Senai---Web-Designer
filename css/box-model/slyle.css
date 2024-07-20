@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 80px;
+    background-color: pink;
+}
+
+.menu {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a {
+    line-height: 80px;
+    margin: 0 20px;
+    font-family: center;
+}
+
+.box {
+    border: 1px solid red;
+    width: 800px;
+    margin: 0 auto;
+}
+
+#box {
+    border: 1px solid green;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.azul {
+    color: blue;
+}
+
+h1,
+h2,
+h3 {
+    border: 1px solid red;
+    font-family: sans-serif;
+}
+
+P {
+    font-family: sans-serif;
+    margin: 20px;
+}
